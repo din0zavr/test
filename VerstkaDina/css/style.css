@@ -33,7 +33,7 @@ body {
 
 /*page 1*/
 .mainpage {
-    background: url(/img/FonForHome.png) center center no-repeat;
+    background: url(img/FonForHome.png) center center no-repeat;
     height: 769px;
     background-size: cover;
 }
@@ -284,7 +284,7 @@ hr {
 .bacground__town {
     margin-top: 10px;
     height: 499px;
-    background: url(/img/BacgroundTown.png) center center no-repeat;
+    background: url(img/BacgroundTown.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -459,7 +459,7 @@ color: #FFFFFF;
 .T{
     width: 12.04px;
     height: 12.04px;
-    background: url(/img/comboT.png) center center no-repeat;
+    background: url(img/comboT.png) center center no-repeat;
     background-size: cover;
     margin-right: 25px;
 
@@ -467,7 +467,7 @@ color: #FFFFFF;
 .F{
     width: 12.04px;
     height: 12.04px;
-    background: url(/img/comboF.png) center center no-repeat;
+    background: url(img/comboF.png) center center no-repeat;
     background-size: cover;
     margin-right: 25px;
 
@@ -477,7 +477,7 @@ color: #FFFFFF;
 .G{
     width: 12.04px;
     height: 12.04px;
-    background: url(/img/comboG.png) center center no-repeat;
+    background: url(img/comboG.png) center center no-repeat;
     background-size: cover;
 }
 
