@@ -11,7 +11,7 @@ body {
 
 
 .mainpage {
-    background-image: url(/img/bgc.png);
+    background-image: url(../img/bgc.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
