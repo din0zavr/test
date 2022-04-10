@@ -1,0 +1,219 @@
+.container-form {
+    margin: 0 0;
+    padding-top: 60px;
+    height: 997px;
+    width: 100%;
+    background-image: url(../img/bacground.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.form {
+    margin: 0 auto;
+    height: 900px;
+    width: 48%;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.text-form {
+    margin: 29px auto;
+    width: 89%;
+    height: 85px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background: #64C209;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 9px;
+}
+
+input[type=text] {
+    padding-left: 30px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #254626;
+    width: 89%;
+    height: 86px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    background: rgba(63, 241, 0, 0.2);
+}
+
+#name{
+    margin-top: 0px;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #254626;
+
+    /* Chrome, Safari, Opera */
+}
+
+::-moz-placeholder {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #254626;
+
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #254626;
+
+    /* IE */
+}
+
+input:focus {
+    background: rgba(63, 241, 0, 0.2);
+    outline: 0;
+}
+
+.container-radio {
+    margin: 0 auto;
+    width: 89%;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.form-group1 {
+    padding-right: 20%;
+}
+
+
+label {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 44px;
+    /* identical to box height */
+
+
+    color: #254626;
+}
+
+
+/* Рисуем внешний круг радиокнопки*/
+.custom-radio-btn {
+    position: relative;
+    /* Родительский элемент*/
+    display: inline-block;
+    /* Для применения рамок, размеров*/
+    width: 80px;
+    height: 80px;
+    background: #FFFFFF;
+box-shadow: 2px 6px 3px rgba(0, 0, 0, 0.25);
+   /* Толщина, стиль, цвет рамки*/
+    border-radius: 50%;
+    /* Получение круга*/
+    vertical-align: middle;
+    /* Выравнивание кнопки по центру*/
+    margin-right: 5px;
+    /* Отступ между кнопкой и меткой*/
+}
+
+/* Рисуем внутренний круг */
+.custom-radio-btn::before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #64C209;
+    border-radius: 50%;
+
+    /* Выравниваем по центру относительно внешнего круга */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    /* Плавный переход трансформации масштабирования */
+    transition: 0.2s ease-in;
+}
+.real-radio-btn:checked+.custom-radio-btn::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.real-radio-btn {
+    /* Скрываем реальную радио кнопку*/
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#write{
+    height: 130px;
+}
+
+#submit{
+    margin: 29px auto;
+    width: 89%;
+    height: 85px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background: #64C209;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

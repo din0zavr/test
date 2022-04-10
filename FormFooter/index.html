@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ADAPTIVE</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/date.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@600&display=swap"
+        rel="stylesheet">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+    <script src="/js/mask_imput.js"></script>
+
+</head>
+
+<body>
+    <div class="container-form">
+        <div class="form" >
+            <form action="https://formspree.io/f/mwkyrpzw" method="post">
+            <div class="text-form">
+                <h1> Форма для заказа</h1>
+            </div>
+            <input class="name" type="text" id="name" name="name" placeholder="Введите имя...">
+
+            <div class="container-radio">
+                <div class="form-group1">
+                    <label>
+
+                        <input type="radio" name="payment" value="cash" class="real-radio-btn">
+                        <span class="custom-radio-btn"></span>
+                        Наличные
+
+                    </label>
+                </div>
+                <div class="form-group2">
+                    <label>
+                        <input type="radio" name="payment" value="card" class="real-radio-btn">
+                        <span class="custom-radio-btn">
+                        </span>
+                        Карта
+                    </label>
+                </div>
+            </div>
+
+            <div class="container-date">
+                <input type="text" name="date" class="date" id="datepicker" placeholder="04/14/2022">
+            </div>
+
+            <input type="text" value="" name="tel" class="tel" placeholder="+375 (__) ___-__-__">
+
+            <input type="text" value="" name="write" id="write" placeholder="Напишите блюда для заказа...">
+
+            <button type="submit" id="submit" value="Отправить" onclick="sendMail (this.form)">Отправить</button>
+        </form>
+        </div>
+    </div>
+</body>
