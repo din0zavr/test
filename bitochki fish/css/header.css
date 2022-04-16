@@ -1,0 +1,73 @@
+header {
+  font-family: "Comfortaa";
+  display: flex;
+  margin: 16px 15% 22px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 23px;
+}
+
+header a {
+  text-decoration: none;
+  color: #254626;
+  padding: 0px 10px;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #64c209;
+}
+
+.close {
+  display: none;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  font-size: 23px;
+  color: #000000;
+  background-color: rgba(100, 194, 9, 0.8);
+}
+
+.dropDownMenu a {
+  padding: 8px 40px;
+  border-top: 1px solid black;
+}
+
+.dropDownMenu a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    margin: 10px 50px 20px;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .dropDownMenu a {
+    padding: 7px 35px;
+    font-size: 16px;
+  }
+
+  header:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    margin: 10px 20px 10px;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    line-height: 30px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+}
