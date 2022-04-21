@@ -1,223 +1,241 @@
-body {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
-
-P{
-  line-height: 36px;
-  padding-bottom: 5px;
-}
-
-.title {
-  padding-top: 30px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 35px;
-  color: #254626;
-}
-
-.main-page {
-  font-family: "Merriweather";
-  background-image: url(../img/mainFone.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.main-page img {
-  height: 350px;
-  width: auto;
-  margin-right: 4%;
-}
-
-.short-info-container {
-  display: flex;
-  margin-left: 100px;
-  margin-right: 110px;
-}
-
-.short-info {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.calories {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-  align-self: center;
-  font-weight: 300;
-  font-size: 24px;
-  color: #64c209;
-}
-
-.ingredients-title {
-  margin-top: 20px;
-  align-self: center;
-  font-weight: 700;
-  font-size: 25px;
-  color: #254626;
-}
-
-.ingredients-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  color: #254626;
-}
 
 .wish-ingredients-container {
-margin-left: 100px;
-}
-
-.ingredients {
-  width: 55%;
-}
-
-.wish-ingredients_title {
-  padding-top: 40px;
-  margin-left: 20px;
+  margin-left: 100px;
+  }
+  
+  .wish-ingredients_title {
+    font-size: calc(11px + 15 * (100vw / 1440));
+    width: 100%;
+    padding: 0;
+    margin-bottom: -18px;
+    padding-top: 7.5%;
+    font-family: 'Merriweather';
+  font-style: italic;
   font-weight: 700;
-  line-height: 0px;
-}
-
-.cooking {
-  padding-top: 20px;
-  background-image: url(../img/vegFone.png);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cooking-title {
-  margin-bottom: 30px;
-  font-weight: 700;
-  font-size: 36px;
+  
   color: #254626;
-}
-
-.cooking-info {
-  width: 70%;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 26px;
-  color: #000000;
-  padding-bottom: 30px;
-}
-
-.tab {
-  text-indent: 0px;
-}
-
-.cooking-info p {
-  margin: 0px 0px 20px;
-  padding: 0px;
-}
-
-@media screen and (max-width: 1124px) {
-  .short-info-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
   }
-
-  p{
-    line-height: 19px;
+  
+  ul.wish-ingredients{
+    padding-left: 3%; 
   }
-
-  .wish-ingredients-container {
-    margin-left: 0px;
-    }
-
-  .ingredients-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 68%;
-    margin: 0 auto;
-    font-size: 20px;
+  
+  body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
   }
-
-  .main-page img {
-    height: 60%;
-    width: 60%;
-    margin: 0 auto;
+  .dis{
+    font-size: calc(11px + 15 * (100vw / 1440));
+    white-space: nowrap;
   }
-
-  .calories {
-    margin-top: 10px;
-    display: flex;
-    width: 90%;
-    justify-content: space-between;
-    align-self: center;
-    font-size: 18px;
+  li{
+    font-size: calc(9.7px + 10.5* (100vw / 1440));
+    line-height: 130%;
+  padding: 0 0;
   }
-
+  ul.ingredients{
+    padding-left: 3%; 
+  }
   .title {
-    padding-top: 20px;
-    margin-bottom: 15px;
-    font-size: 25px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: calc(16px + 15 * (100vw / 1440));
     color: #254626;
   }
-
-  .ingredients-title {
-    margin-top: 13px;
-    font-size: 18px;
-  }
-
-  .ingredients {
-    width: 90%;
-  }
-
-  .wish-ingredients-container {
-    margin-right: 15px;
-  }
-
-  .wish-ingredients_title {
-    padding-top: 15px;
-  }
-
-  .cooking {
-    margin-top: 10px;
-    padding-top: 20px;
+  
+  .main-page {
+    font-family: "Merriweather";
+    background-image: url(../img/mainFone.png);
     background-size: cover;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
   }
-
+  
+  .main-page img {
+    height: 280px;
+    width: auto;
+    margin-left: 4%;
+    margin-bottom: 40px;
+  }
+  
+  .short-info-container {
+    display: flex;
+  }
+  
+  .short-info {
+    padding-left: 4%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .calories {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-self: center;
+    font-weight: 300;
+    font-size: calc(11px + 15 * (100vw / 1440));
+    color: #64c209;
+  }
+  
+  .ingredients-title {
+    margin-top: 20px;
+    align-self: center;
+    font-weight: 700;
+    font-size: calc(11px + 15 * (100vw / 1440));
+    color: #254626;
+  }
+  
+  .ingredients-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    font-weight: 400;
+    color: #254626;
+  }
+  .ingredients {
+    width: 70%;
+  }
+  
+  
+  .cooking {
+    padding-top: 20px;
+    background-image: url(../img/vegFone.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .cooking-title {
     margin-bottom: 20px;
-    font-size: 25px;
-    text-align: center;
+    font-weight: 700;
+    font-size: calc(16px + 15 * (100vw / 1440));
+    color: #254626;
   }
-
+  
   .cooking-info {
-    width: 68%;
-    font-size: 18px;
-    line-height: 23px;
-    padding-bottom: 20px;
+    width: 70%;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 26px;
+    color: #000000;
+    padding-bottom: 40px;
   }
-
-  .media{
-    margin:0 0;
+  
+  .cooking-info p {
+    padding: 0px;
+    line-height: 36px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    font-size: calc(9.7px + 10.5* (100vw / 1440));
   }
-}
-
-@media screen and (max-width: 1426px) {
-  .dis {
-    padding-left: 15px;
-    padding-right: 15px;
+  
+  @media screen and (max-width: 1124px) {
+    .wish-ingredients-container {
+      margin-left:0px;
+      }
+      
+      .wish-ingredients_title {
+        margin-bottom: -15.5px;
+        padding-top: 1%;
+      }
+      
+    .short-info-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0px auto;
+    }
+    .short-info {
+      padding-left: 0%;
+      padding-right: 0%;
+    }
+    .cooking-info p {
+      line-height: 22px;
+    }
+  
+    .ingredients-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 68%;
+      margin: 0 auto;
+    }
+  
+    .main-page img {
+      height: 50%;
+      width: 50%;
+      margin: 0 auto;
+    }
+  
+    .calories {
+      margin-top: 10px;
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      align-self: center;
+    }
+  
+    .wish-ingredients_title {
+  text-align: center;
+  margin-bottom: -15px;
+    }
+  
+    .title {
+      padding-top: 20px;
+      margin-bottom: 15px;
+      color: #254626;
+    }
+  
+    .ingredients-title {
+      margin-top: 13px;
+    }
+  
+    .ingredients {
+      width: 90%;
+    }
+  
+  
+    .cooking {
+      margin-top: 10px;
+      padding-top: 20px;
+      background-size: cover;
+      background-repeat: repeat-y;
+    }
+  
+    .cooking-title {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .cooking-info {
+      width: 68%;
+      line-height: 23px;
+      padding-bottom: 20px;
+    }
+  
+    .media{
+      margin:0 0;
+    }
   }
-}
-
-@media screen and (max-width: 768px) {
-  .cooking {
- background-image: none;
+  
+  
+  @media screen and (max-width: 768px) {
+    .cooking {
+   background-image: none;
+    }
+  
+    li{
+      line-height: 130%;
+    }
+  
+    .cooking-info p {
+      line-height: 130%;
+    }
   }
-}
+  
