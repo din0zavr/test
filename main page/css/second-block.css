@@ -1,0 +1,139 @@
+body {
+  box-sizing: border-box;
+  font-family: Comfortaa, "sans-serif", Georgia, "Times New Roman", Times, serif;
+}
+
+.dishes {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 115px;
+}
+
+.dishes:last-child {
+  margin-right: 0px;
+}
+
+.dishes-title {
+  margin: 70px 0px;
+  font-family: Merriweather;
+  font-size: 38px;
+  font-weight: 700;
+  color: #254626;
+  align-self: center;
+}
+
+.dishes-content {
+  display: flex;
+  padding-left: 40px;
+}
+
+.dishes-item {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 580px;
+  height: 700px;
+  margin-right: 30px;
+  padding-left: 35px;
+}
+
+.dishes-item_title {
+  font-family: "Comfortaa";
+  font-weight: 400;
+  font-size: 32px;
+  color: #254626;
+  margin: 50px 0px 59px;
+  text-align: center;
+}
+
+.dishes-item_img {
+  width: 350px;
+  height: 320px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 230px;
+  margin-left: 265px;
+}
+
+.dishes-item_text ul {
+  list-style-type: disc;
+  color: #254626;
+  width: 270px;
+}
+
+.dishes-item_text ul li {
+  font-family: "Comfortaa";
+  font-weight: 400;
+  font-size: 29px;
+  color: #254626;
+  margin-bottom: 15px;
+}
+
+.dishes-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0px 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .dishes-item_img {
+    display: none;
+  }
+
+  .dishes {
+    margin: -50px 70px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dishes {
+    margin: 10px;
+  }
+
+  .dishes-item_text ul {
+    width: 90%;
+  }
+
+  .dishes-navigation {
+    margin: 45px 30px 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dishes-title {
+    margin: 5px 0px 25px;
+    font-size: 20px;
+    align-self: center;
+  }
+
+  .dishes-item_text ul {
+    margin-left: -15px;
+  }
+
+  .dishes-item {
+    width: 200px;
+    height: 300px;
+    margin-right: 10px;
+  }
+
+  .dishes-content {
+    padding-left: 0px;
+    justify-content: space-between;
+  }
+
+  .dishes-item_title {
+    font-size: 15px;
+    margin: 20px 0px 20px;
+    align-self: flex-start;
+  }
+
+  .dishes-item_text ul li {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .backButton,
+  .nextButton {
+    width: 60px;
+  }
+}
