@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>oblizheshsya</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/first-block.css">
+        <link rel="stylesheet" href="css/second-block.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/date.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        </script>
+    
+        <script src="/mask_imput.js"></script>
+        <script src="/send.js"></script>
+    </head>
+    <body>
+        <header>
+            <a class="xs-start" href="">Главная</a>
+            <a class="xs-center" href="">Тест</a>
+            <a class="xs-end" href="">Контакты</a>
+            <a class="header-logo" href=""><img src="img/logo.png" alt=""></a>
+            <div class="dropdownMenuContainer">
+                <a class="dropdownMenuButton xs-start" href="">ТОП рецептов</a>
+                <div class="dropDownMenu close">
+                    <a href="">Рецепт 1</a>
+                    <a href="">Рецепт 2</a>
+                    <a href="">Рецепт 3</a>
+                    <a href="">Рецепт 4</a>
+                    <a href="">Рецепт 5</a>
+                    <a href="">Рецепт 6</a>
+                    <a href="">Рецепт 7</a>
+                </div>
+            </div>
+            <a class="colcul xs-end" href="">Калькулятор</a>
+        </header>
+        <div class="main-content">
+            <h1>Вкусно. Удобно. Полезно.</h1>
+            <h3 class="maim-desription">Сайт столовой Акадмиии управления поможет любому студенту и преподавателю сделать заказ и посмотреть меню не выходя из аудитории.</h3>
+            <a class="main-orderButton" href="">Заказать сейчас</a>
+        </div>
+        <div class="dishes">
+            <div class="dishes-title">Наше меню</div>
+            <div class="dishes-content"></div>
+            <div class="dishes-navigation">
+                <img class="backButton" src="./img/back.png" alt="">
+                <img class="nextButton" src="./img/next.png" alt="">
+            </div>
+        </div>
+
+        <div class="container-form">
+            <div class="form" >
+                <form action="https://formspree.io/f/mwkyrpzw" method="post">
+                <div class="text-form">
+                    <h1> Форма для заказа</h1>
+                </div>
+                <input class="name" type="text" id="name" name="name" placeholder="Введите имя...">
+    
+                <textarea placeholder="Напишите ваш отзыв..." rows="3"></textarea>
+    
+                <button type="submit" id="submit" value="Отправить" onclick="sendMail (this.form)">Отправить</button>
+            </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-footer">
+                <div class="column-1">
+                    <H1 class="media">Телефон:</H1>
+                    <H1 class="media">80 (25) 165 16 15</H1>
+                </div>
+                <div class="column-2">
+                    <H1 class="media">Контакты:</H1>
+                    <a href="#">vk: @oblizheshsya</a>
+                    <a href="#">instagram: @oblizheshya</a>
+
+                </div>
+                <div class="column-3">
+                    <H1 class="media">Мы находимся:</H1>
+                    <H1 class="media">Минск, ул. Московская, 17</H1>
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="./index.js"></script>
+    </body>
+</html>    
